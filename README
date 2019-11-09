@@ -9,7 +9,7 @@ Setup:
 S1911091815 - Set date to 2019.09.18 and set time to 18:15
 
 Set logging interval in sec.:
-T030	- Log every 30 sec. can be 001 to 999 sec.
+I030	- Log every 30 sec. can be 001 to 999 sec.
 
 
 All data saved to SD card in following format:
