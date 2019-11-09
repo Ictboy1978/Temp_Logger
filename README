@@ -1,0 +1,21 @@
+Temperature and humidity logger with
+
+- Arduino Nano
+- DS3231 RTC
+- DHT22 Temperature sensor
+- SD card module
+
+Setup:
+S1911091815 - Set date to 2019.09.18 and set time to 18:15
+
+Set logging interval in sec.:
+T030	- Log every 30 sec. can be 001 to 999 sec.
+
+
+All data saved to SD card in following format:
+
+Date;Time;Temperature;Humidity
+2019/11/09;08:38:31; 24.3; 60.3
+2019/11/09;08:39:01; 24.3; 60.0
+...
+
