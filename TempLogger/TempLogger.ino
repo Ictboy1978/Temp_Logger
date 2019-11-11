@@ -197,7 +197,7 @@ void loop()
       cnt = 0;
       dht.read();
       RH = 10 * dht.humidity;
-      Temp = (10 * dht.temperature) - 0.5;
+      Temp = 10 * (dht.temperature - 0.5);
 
       if (Temp < 0)
       {
