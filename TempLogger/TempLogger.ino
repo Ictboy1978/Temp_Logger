@@ -195,9 +195,15 @@ void loop()
     if (cnt == readinterval)
     {
       cnt = 0;
-      dht.read();
-      RH = 10 * dht.humidity;
-      Temp = 10 * (dht.temperature -0.6);   //BUGFIX
+      for(u8 xc=0;xc<4;xc++)
+      {
+        dht.read();
+        RH = 10 * dht.humidity;
+        Temp = 10 * (dht.temperature -0.6);   //BUGFIX
+        delay(50);
+      }
+      RH /= 4;
+      Temp /=4;
 
       if (Temp < 0)
       {
